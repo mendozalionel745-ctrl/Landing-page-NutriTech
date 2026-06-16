@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NutriTech — Plataforma para estudiantes y jóvenes profesionales que gestionan su nutrición, encuentran comida saludable y organizan sus horarios.">
+  <title>NutriTech — Nutrición inteligente para tu vida universitaria</title>
+  <link rel="icon" type="image/png" href="assets/logo-nutritech.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Akatab:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo" aria-label="NutriTech — Inicio">
+        <img src="assets/logo-nutritech.png" alt="NutriTech" width="160" height="56">
+      </a>
+
+      <button class="navbar__toggle" id="navToggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="navMenu">
+        <span class="navbar__toggle-bar"></span>
+        <span class="navbar__toggle-bar"></span>
+        <span class="navbar__toggle-bar"></span>
+      </button>
+
+      <nav class="navbar__nav" id="navMenu" aria-label="Navegación principal">
+        <ul class="navbar__links">
+          <li><a href="#beneficios" class="navbar__link">Beneficios</a></li>
+          <li><a href="#funciones" class="navbar__link">Funciones</a></li>
+          <li><a href="#resenas" class="navbar__link">Reseñas</a></li>
+          <li><a href="#faq" class="navbar__link">FAQ</a></li>
+          <li><a href="#descarga" class="navbar__link">Descarga</a></li>
+        </ul>
+        <div class="navbar__actions">
+          <a href="login.html" class="btn btn--outline">Iniciar Sesión</a>
+          <a href="register.html" class="btn btn--primary">Empieza Gratis</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="inicio">
+      <div class="hero__blobs" aria-hidden="true">
+        <span class="blob blob--green"></span>
+        <span class="blob blob--blue"></span>
+      </div>
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <span class="badge"> Nutrición + Tecnología</span>
+          <h1 class="hero__title">
+            Potencia tu rendimiento académico con una
+            <span class="text-accent">nutrición inteligente</span>.
+          </h1>
+          <p class="hero__subtitle">
+            Organiza tus comidas según tu presupuesto y horarios de clase.
+            Encuentra opciones saludables cerca de ti y mantén la energía que necesitas para estudiar.
+          </p>
+          <div class="hero__actions">
+            <a href="register.html" class="btn btn--primary btn--lg">Empieza Gratis</a>
+            <a href="#como-funciona" class="btn btn--ghost btn--lg">Ver cómo funciona</a>
+          </div>
+          <div class="hero__stats">
+            <div class="stat">
+              <span class="stat__number" data-target="12000">0</span>
+              <span class="stat__label">Estudiantes activos</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number" data-target="850">0</span>
+              <span class="stat__label">Restaurantes saludables</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number" data-target="4.8" data-decimal="true">0</span>
+              <span class="stat__label">Valoración media</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero__visual reveal reveal--delay">
+          <div class="hero__image-stack">
+            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&h=400&fit=crop&q=80" alt="Comida saludable variada" class="hero__img hero__img--main" loading="eager">
+            <div class="hero__floating-card">
+              <span class="hero__floating-icon">✓</span>
+              <div>
+                <strong>Meta diaria</strong>
+                <span>85% completada</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pain Points -->
+    <section class="pain-points" id="beneficios">
+      <div class="container">
+        <p class="section-eyebrow reveal">El problema</p>
+        <h2 class="section-title reveal">La vida universitaria es dura. Tu nutrición no debería serlo.</h2>
+        <div class="pain-points__grid">
+          <article class="pain-card reveal">
+            <div class="pain-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3 class="pain-card__title">Falta de tiempo</h3>
+            <p class="pain-card__text">Entre clases, trabajos y actividades, cocinar saludable queda al final de tu lista de prioridades.</p>
+          </article>
+          <article class="pain-card reveal reveal--delay">
+            <div class="pain-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3 class="pain-card__title">Presupuesto limitado</h3>
+            <p class="pain-card__text">Comer bien no debería costar una fortuna. Encontrar opciones económicas y nutritivas es un reto diario.</p>
+          </article>
+          <article class="pain-card reveal reveal--delay-2">
+            <div class="pain-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/></svg>
+            </div>
+            <h3 class="pain-card__title">Baja energía para estudiar</h3>
+            <p class="pain-card__text">Una mala alimentación afecta tu concentración, rendimiento y bienestar general durante el semestre.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features with tabs -->
+    <section class="features" id="funciones">
+      <div class="container">
+        <p class="section-eyebrow reveal">Funcionalidades</p>
+        <h2 class="section-title reveal">Todo lo que necesitas, en un solo lugar.</h2>
+
+        <div class="feature-tabs reveal">
+          <div class="feature-tabs__nav" role="tablist" aria-label="Funcionalidades de NutriTech">
+            <button class="feature-tabs__btn is-active" role="tab" aria-selected="true" aria-controls="panel-schedule" id="tab-schedule" data-tab="schedule">Schedule Sync</button>
+            <button class="feature-tabs__btn" role="tab" aria-selected="false" aria-controls="panel-geo" id="tab-geo" data-tab="geo">Smart Geolocation</button>
+            <button class="feature-tabs__btn" role="tab" aria-selected="false" aria-controls="panel-dash" id="tab-dash" data-tab="dash">Nutritional Dashboard</button>
+          </div>
+
+          <div class="feature-tabs__panels">
+            <article class="feature-panel is-active" id="panel-schedule" role="tabpanel" aria-labelledby="tab-schedule" data-panel="schedule">
+              <div class="feature-panel__content">
+                <div class="feature-card">
+                  <div class="feature-card__icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  </div>
+                  <h3 class="feature-card__title">Schedule Sync</h3>
+                  <p class="feature-card__text">Sincroniza tus horarios de clases y recibe sugerencias de comidas adaptadas a tus ventanas libres. NutriTech detecta cuándo tienes tiempo para comer y te propone opciones rápidas o para llevar.</p>
+                </div>
+                <img src="assets/app-estudiante-horario.png" alt="Estudiante usando NutriTech para configurar objetivos nutricionales mientras estudia" class="feature-panel__img" loading="lazy">
+              </div>
+            </article>
+
+            <article class="feature-panel" id="panel-geo" role="tabpanel" aria-labelledby="tab-geo" data-panel="geo" hidden>
+              <div class="feature-panel__content">
+                <div class="feature-card">
+                  <div class="feature-card__icon feature-card__icon--blue">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  </div>
+                  <h3 class="feature-card__title">Smart Geolocation</h3>
+                  <p class="feature-card__text">Encuentra restaurantes y opciones baratas y saludables cerca de tu campus en un mapa interactivo. Filtra por presupuesto, calorías y tiempo de entrega.</p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=500&h=350&fit=crop&q=80" alt="Mapa con ubicaciones de restaurantes" class="feature-panel__img" loading="lazy">
+              </div>
+            </article>
+
+            <article class="feature-panel" id="panel-dash" role="tabpanel" aria-labelledby="tab-dash" data-panel="dash" hidden>
+              <div class="feature-panel__content">
+                <div class="feature-card">
+                  <div class="feature-card__icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                  </div>
+                  <h3 class="feature-card__title">Nutritional Dashboard</h3>
+                  <p class="feature-card__text">Visualiza tu progreso nutricional, metas diarias y hábitos alimenticios con gráficos claros y accionables. Sigue tus macros, hidratación y energía semanal.</p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=500&h=350&fit=crop&q=80" alt="Dashboard de salud y nutrición" class="feature-panel__img" loading="lazy">
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="features__grid features__grid--compact">
+          <article class="feature-card reveal">
+            <div class="feature-card__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+            <h3 class="feature-card__title">Schedule Sync</h3>
+            <p class="feature-card__text">Sincronización automática con tu calendario universitario.</p>
+          </article>
+          <article class="feature-card reveal reveal--delay">
+            <div class="feature-card__icon feature-card__icon--blue"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <h3 class="feature-card__title">Smart Geolocation</h3>
+            <p class="feature-card__text">Mapa inteligente con opciones cerca de tu campus.</p>
+          </article>
+          <article class="feature-card reveal reveal--delay-2">
+            <div class="feature-card__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+            <h3 class="feature-card__title">Nutritional Dashboard</h3>
+            <p class="feature-card__text">Gráficos de progreso y metas personalizadas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="how-it-works" id="como-funciona">
+      <div class="container">
+        <p class="section-eyebrow reveal">Paso a paso</p>
+        <h2 class="section-title reveal">Así de fácil es empezar con NutriTech</h2>
+        <div class="steps">
+          <article class="step reveal">
+            
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=260&fit=crop&q=80" alt="Registro en la app" class="step__img" loading="lazy">
+            <h3>Crea tu cuenta gratis</h3>
+            <p>Regístrate en segundos con tu correo universitario o Google.</p>
+          </article>
+          <article class="step reveal reveal--delay">
+            
+            <img src="https://images.unsplash.com/photo-1506784365847-bbad939e9335?w=400&h=260&fit=crop&q=80" alt="Configurar horarios y preferencias" class="step__img" loading="lazy">
+            <h3>Configura tu perfil</h3>
+            <p>Indica tu horario, presupuesto y preferencias alimenticias.</p>
+          </article>
+          <article class="step reveal reveal--delay-2">
+            
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=260&fit=crop&q=80" alt="Comida saludable lista" class="step__img" loading="lazy">
+            <h3>Recibe recomendaciones</h3>
+            <p>Obtén sugerencias personalizadas y encuentra comida cerca de ti.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews" id="resenas">
+      <div class="container">
+        <p class="section-eyebrow reveal">Reseñas</p>
+        <h2 class="section-title reveal">Lo que dicen nuestros usuarios</h2>
+
+        <div class="reviews__carousel reveal">
+          <button class="carousel__btn carousel__btn--prev" id="reviewPrev" aria-label="Reseña anterior">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+
+          <div class="carousel__track" id="reviewTrack">
+            <article class="review-card">
+              <div class="review-card__stars" aria-label="5 de 5 estrellas">★★★★★</div>
+              <p class="review-card__text">"NutriTech cambió completamente mi rutina. Antes comía lo que pillaba entre clases; ahora tengo un plan que encaja con mi horario y mi bolsillo."</p>
+              <div class="review-card__author">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop&q=80" alt="" class="review-card__avatar" loading="lazy">
+                <div>
+                  <strong>María González</strong>
+                  <span>Estudiante de Medicina, UPN</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="review-card">
+              <div class="review-card__stars" aria-label="5 de 5 estrellas">★★★★★</div>
+              <p class="review-card__text">"El mapa de restaurantes saludables cerca del campus es oro puro. Encontré 3 sitios baratos que no conocía y ahora son mis favoritos."</p>
+              <div class="review-card__author">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&q=80" alt="" class="review-card__avatar" loading="lazy">
+                <div>
+                  <strong>Cesar Quispe</strong>
+                  <span>Ingeniería Informática, UPC</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="review-card">
+              <div class="review-card__stars" aria-label="4 de 5 estrellas">★★★★☆</div>
+              <p class="review-card__text">"Trabajo y estudio a la vez, así que el tiempo es oro. La sincronización con mi calendario me ahorra pensar qué comer cada día."</p>
+              <div class="review-card__author">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&q=80" alt="" class="review-card__avatar" loading="lazy">
+                <div>
+                  <strong>Camila Cachique</strong>
+                  <span>Marketing Digital, ESAN</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="review-card">
+              <div class="review-card__stars" aria-label="5 de 5 estrellas">★★★★★</div>
+              <p class="review-card__text">"El dashboard nutricional me motiva a cuidarme. Ver mi progreso semanal me hace sentir que estoy invirtiendo en mi futuro, no solo en notas."</p>
+              <div class="review-card__author">
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&q=80" alt="" class="review-card__avatar" loading="lazy">
+                <div>
+                  <strong>Diego Esquicha</strong>
+                  <span>UTEC</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <button class="carousel__btn carousel__btn--next" id="reviewNext" aria-label="Siguiente reseña">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+
+        <div class="carousel__dots" id="reviewDots" aria-label="Indicadores del carrusel"></div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <div class="container faq__grid">
+        <div class="faq__header reveal">
+          <p class="section-eyebrow">FAQ</p>
+          <h2 class="section-title section-title--left">Preguntas frecuentes</h2>
+          <p class="faq__intro">Resolvemos las dudas más comunes sobre NutriTech. ¿No encuentras lo que buscas? Escríbenos.</p>
+        </div>
+        <div class="accordion reveal reveal--delay" id="faqAccordion">
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>¿NutriTech es gratis?</span>
+              <svg class="accordion__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="accordion__content">
+              <p>Sí, NutriTech es completamente gratuito para estudiantes universitarios. Puedes acceder a todas las funcionalidades principales sin coste alguno.</p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>¿Funciona en mi universidad?</span>
+              <svg class="accordion__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="accordion__content">
+              <p>NutriTech funciona en cualquier universidad de Peru . Solo necesitas indicar tu campus y la app adaptará las recomendaciones a tu zona.</p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>¿Cómo sincronizo mi horario de clases?</span>
+              <svg class="accordion__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="accordion__content">
+              <p>Puedes importar tu horario desde Google Calendar, subir un archivo PDF de tu universidad o introducirlo manualmente en la app. Schedule Sync se encarga del resto.</p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>¿Mis datos están seguros?</span>
+              <svg class="accordion__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="accordion__content">
+              <p>Absolutamente. Cumplimos con el RGPD y nunca vendemos tus datos. Toda la información nutricional y de ubicación se almacena de forma cifrada.</p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>¿Puedo usar NutriTech sin conexión?</span>
+              <svg class="accordion__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="accordion__content">
+              <p>Sí, puedes consultar tu plan de comidas y horarios sin conexión. Para el mapa y recomendaciones en tiempo real necesitarás internet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download -->
+    <section class="download" id="descarga">
+      <div class="container download__inner reveal">
+        <div class="download__content">
+          
+          <h2 class="download__title">Lleva NutriTech contigo a todas partes</h2>
+          <p class="download__text">Disponible para iOS y Android. Gestiona tu nutrición desde el móvil, donde y cuando quieras.</p>
+          <div class="download__badges">
+            <a href="#" class="store-badge" aria-label="Descargar en App Store">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              <span><small>Disponible en</small><strong>App Store</strong></span>
+            </a>
+            <a href="#" class="store-badge" aria-label="Descargar en Google Play">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M3 20.5v-17c0-.83.67-1.5 1.5-1.5.29 0 .57.08.81.24l13.32 7.66c.72.42.72 1.44 0 1.86L5.31 20.26c-.24.16-.52.24-.81.24-.83 0-1.5-.67-1.5-1.5z"/></svg>
+              <span><small>Disponible en</small><strong>Google Play</strong></span>
+            </a>
+          </div>
+        </div>
+        <div class="download__mockup">
+          <img
+            src="assets/app-mockup-iphone.png"
+            alt="Mockup de la app NutriTech en iPhone con pantalla de inicio de sesión"
+            class="download__mockup-img"
+            width="400"
+            height="600"
+            loading="lazy"
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Video placeholder -->
+    <section class="video-section" id="video">
+      <div class="container">
+        
+        <h2 class="section-title reveal">Descubre cómo funciona NutriTech</h2>
+        <p class="video-section__subtitle reveal">Mira el video y conoce todas las funcionalidades de la plataforma.</p>
+        <div class="video-placeholder reveal" id="videoPlaceholder">
+          
+          <div class="video-placeholder__inner">
+            <div class="video-placeholder__icon" aria-hidden="true">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </div>
+            <p class="video-placeholder__text">Espacio reservado para el video explicativo</p>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="cta-final">
+      <div class="container cta-final__inner reveal">
+        <h2>¿Listo para transformar tu alimentación?</h2>
+        <p>Únete a miles de estudiantes que ya mejoraron su nutrición con NutriTech.</p>
+        <div class="cta-final__actions">
+          <a href="register.html" class="btn btn--primary btn--lg">Crear cuenta gratis</a>
+          <a href="login.html" class="btn btn--outline btn--lg btn--light">Ya tengo cuenta</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="index.html" class="footer__logo" aria-label="NutriTech — Inicio">
+        <img src="assets/logo-nutritech.png" alt="NutriTech" width="130" height="46">
+      </a>
+      <nav class="footer__nav" aria-label="Enlaces legales">
+        <a href="#" class="footer__link">Términos de uso</a>
+        <a href="#" class="footer__link">Privacidad</a>
+        <a href="#faq" class="footer__link">FAQ</a>
+        <a href="#" class="footer__link">Contacto</a>
+      </nav>
+      <p class="footer__copy">&copy; 2026 NutriTech. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
